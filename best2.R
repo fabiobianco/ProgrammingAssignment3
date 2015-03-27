@@ -1,7 +1,7 @@
 ## The function reads the outcome-of-care-measures.csv file and returns a character vector with the name 
 ## of the hospital that has the best (i.e. lowest) 30-day mortality for the specified outcome in that state
 ##
-best <- function(state, outcome){
+best2 <- function(state, outcome){
         ## read the data from files
         data <- read.csv("./outcome-of-care-measures.csv", colClasses = "character")
         hospital_data <- read.csv("./hospital-data.csv", colClasses = "character")
