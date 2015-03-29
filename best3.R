@@ -34,8 +34,5 @@ best3 <- function(outcome){
                 data_outcome <- lapply(data_outcome, function(x) x[order(x$pneumonia, x$hospital), ])
         }
         if (i == 0) { stop("invalid outcome")}
-        ##print(data_outcome[[51]])
         return(data_outcome)
-        ##return(data_outcome[[3]])
-        ##return(data_outcome[[50]])
 }

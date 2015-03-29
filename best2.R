@@ -50,5 +50,5 @@ best2 <- function(state, outcome){
         }
         if (i == 0) { stop("invalid outcome")}
         ## Print the Hospital Name!
-        return(data_outcome[1,1])
+        return(data_outcome)
 }

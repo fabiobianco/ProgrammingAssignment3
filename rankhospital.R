@@ -21,7 +21,7 @@ rankhospital <- function(state, outcome, num = "best")
         ## if num is a number 
         num <- as.numeric(num)
         print(num)
-if (num > nrow(datarank)){ return("NA")}
+        if (num > nrow(datarank)){ return("NA")}
         ## create a vector for the specific num rank
         hospital_rank <- subset(datarank, rank == num)
         ## Read outcome data
